@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Hotel.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Hotel Registration Form</h2>
+            <form id="register" method="post">
+
+                <!-- Customer Information -->
+
+                <h3>Customer Information </h3><br>
+                <label>Customer Name:</label><br>
+                <input type="text" id="customer-name" required><br>
+                <label>Check-in-Date:</label><br>
+                <input type="date" id="check-in-date"><br>
+                <label>Total No.Of Days:</label><br>
+                <input type="number" id="total-days"><br>
+                <label>Total No.Of Persons:</label><br>
+                <input type="number" id="total-persons"><br><br>
+
+                <!-- Room Information -->
+
+                <h3>Room Information</h3>
+                <label>Room Type:</label><br>
+                <select id="room-type">
+                    <option value="delux room">Delux Room</option>
+                    <option value="suit room">Suit Room</option>
+                </select><br>
+                <label>Amenities:</label><br>
+                <select id="amenities">
+                    <option value="AC">AC</option>
+                    <option value="Locker">Locker</option>
+                </select><br>
+                <label>Advance Payment:</label><br>
+                <input type="number" id="advance-payment"><br>
+                <label>Total Room Cost:</label><br>
+                <input type="number" id="total-room-cost" readonly><br>
+                <label>Total Amenities Cost:</label><br>
+                <input type="number" id="total-amenities-cost" readonly><br>
+                <label>Total Cost:</label><br>
+                <input type="number" id="total-cost" readonly><br>
+                <label>Balance Amount:</label><br>
+                <input type="number" id="balance-amount" readonly><br>
+
+                <input type="submit" id="submit-button" value="Register" >
+            </form>
+        </div>
+        <div class="submitted">
+            <h2>Submitted Bookings</h2>
+            <ul class="submitted-list" id="submitted-list"></ul>
+        </div>
+    </div>
+    <script src="./Hotel.js"></script>
+</body>
+</html>

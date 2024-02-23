@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+}
+.register{
+    width: 45%;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(133, 133, 133);
+    padding: 10px;
+}
+.register h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.register label{
+    margin-top: 2px;
+    font-size: medium;
+}
+.register input,.register select{
+    height: 30px;
+    font-size: medium;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#submit-button{
+    background-color: blue;
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+.register button:hover{
+    background-color: white;
+    color: blue;
+}
+
+.submitted{
+    width: 45%;
+    background-color: white;
+    padding: 20px;background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(135, 135, 135);
+    padding: 10px;
+
+}
+.submitted h2{
+    text-align: center;
+}
+.submitted-list{
+    list-style: none;
+    padding: 0;
+}
+
+.submitted-booking-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.submitted-booking-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
